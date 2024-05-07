@@ -7,7 +7,8 @@
     "position": {
       "latitude": -28.6792,
       "longitude": -49.3726
-    }
+    },
+    "image": "kids-playground-1.png"
   },
   "duplicated": {
     "name": "Casa Feliz",
@@ -17,12 +18,19 @@
     "position": {
       "latitude": -28.675228,
       "longitude": -49.355403
-    }
+    },
+    "image": "kids-playground-5.png"
   },
-  "create2": {
-    "name": "Lar das Crianças Unidos",
-    "description": "O Lar das Crianças Unidos é uma comunidade calorosa onde crianças órfãs encontram amor, amizade e oportunidades para crescerem felizes e saudáveis. Estamos comprometidos em proporcionar um ambiente familiar seguro e acolhedor.",
-    "opening_hours": "Terça a Sábado, das 9h00 às 17h00"
+  "map": {
+    "name": "Lar das Crianças Unidas",
+    "description": "O Lar das Crianças Unidas é uma comunidade calorosa onde crianças órfãs encontram amor, amizade e oportunidades para crescerem felizes e saudáveis. Estamos comprometidos em proporcionar um ambiente familiar seguro e acolhedor.",
+    "opening_hours": "Terça a Sábado, das 9h00 às 17h00",
+    "open_on_weekends": "Sim",
+    "position": {
+      "latitude": -28.675660,
+      "longitude": -49.361725
+    },
+    "image": "kids-playground-7.png"
   },
   "create3": {
     "name": "Casa da Alegria",
