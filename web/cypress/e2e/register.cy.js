@@ -1,4 +1,5 @@
 import data from '../fixtures/orphanages.json'
+import createPage from '../support/pages/create'
 
 describe('Orphanage registration spec', () => {
     it('Should fill the form to register a new orphanage', () => {
@@ -6,33 +7,20 @@ describe('Orphanage registration spec', () => {
 
         cy.deleteMany({name: orphanage.name}, {collection: 'orphanages'})
 
-        cy.goTo('http://localhost:3000/orphanages/create')
+        createPage.visitPage()
 
-        cy.get('legend')
-            .should('be.visible')
-            .should('have.text', 'Cadastro')
+        cy.setMapPosition(orphanage.position)
 
-        cy.setMapPosition(orphanage.position)  
+        createPage.form(orphanage)
 
-        cy.get('input[name=name]').type(orphanage.name)
-
-        cy.get('#description').type(orphanage.description)
-
-        cy.get('input[type=file]')
-            .selectFile('../web/cypress/fixtures/images/kids-playground-1.png', { force: true })
-
-        cy.get('#opening_hours').type(orphanage.opening_hours)
-
-        cy.contains('button', orphanage.open_on_weekends).click()
-
-        cy.get('.save-button').click()
+        createPage.submit()
 
         cy.get('.swal2-html-container')
             .should('be.visible')
             .should('have.text', 'Orfanato cadastrado com sucesso.')
     })
 
-    it.only('Should not register duplicated orphanages', () => {
+    it('Should not register duplicated orphanages', () => {
         const orphanage = data.duplicated
 
         cy.deleteMany({name: orphanage.name}, {collection: 'orphanages'})
