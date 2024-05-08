@@ -1,3 +1,7 @@
+import '../support/views/map'
+import '../support/views/create'
+import '../support/views/components'
+
 Cypress.Commands.add('goTo', (url, latitude = -28.679634, longitude = -49.370124) => {
     const mockGeolocation = (win, latitude, longitude) => {
       cy.stub(win.navigator.geolocation, 'getCurrentPosition', (cb) => {
