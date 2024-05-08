@@ -32,10 +32,16 @@
     },
     "image": "kids-playground-7.png"
   },
-  "create3": {
+  "required": {
     "name": "Casa da Alegria",
     "description": "A Casa da Alegria é um lar acolhedor para crianças em situação de vulnerabilidade. Nosso objetivo é proporcionar um ambiente seguro e amoroso onde cada criança possa se desenvolver plenamente.",
-    "opening_hours": "Segunda a Sábado, das 8h30 às 16h30"
+    "opening_hours": "Segunda a Sábado, das 8h30 às 16h30",
+    "open_on_weekends": "Sim",
+    "position": {
+      "latitude": -28.674701,
+      "longitude": -49.369146
+    },
+    "image": "kids-playground-2.png"
   },
   "create4": {
     "name": "Abrigo Amor Fraterno",
