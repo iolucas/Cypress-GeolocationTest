@@ -3,3 +3,10 @@ Cypress.Commands.add('popupContent', (text) => {
     .should('be.visible')
     .should('have.text', text)
 })
+
+Cypress.Commands.add('alertContent', (label, text) => {
+  cy.contains('label', label)
+    .parent()
+    .find('small')
+    .should('have.text', text)
+})
