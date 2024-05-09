@@ -1,5 +1,5 @@
 Cypress.Commands.add('visitCreatePage', () => {
-  cy.goTo('http://localhost:3000/orphanages/create')
+  cy.goTo('/orphanages/create')
   cy.get('legend').should('be.visible').should('have.text', 'Cadastro')
 })
 
@@ -23,6 +23,6 @@ Cypress.Commands.add('createOrphanage', (orphanage) => {
   orphanage.opening_hours ?
     cy.get('@fieldOpenHours').type(orphanage.opening_hours) :
     cy.log('Opening hours field is empty')
-  cy.contains('button', orphanage.open_on_weekends).click()
+  cy.contains('button', orphanage.open_on_weekends ? "Sim" : "Não").click()
   cy.get('.save-button').click()
 })

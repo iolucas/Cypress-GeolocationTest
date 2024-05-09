@@ -3,7 +3,7 @@
     "name": "Lar da Esperança",
     "description": "Lar da Esperança é uma instituição dedicada a fornecer cuidados e apoio emocional para crianças órfãs. Nossa missão é oferecer um ambiente seguro e acolhedor onde as crianças possam crescer e prosperar.",
     "opening_hours": "Segunda a Sexta, das 7h30 às 17h30",
-    "open_on_weekends": "Não",
+    "open_on_weekends": false,
     "position": {
       "latitude": -28.6792,
       "longitude": -49.3726
@@ -14,7 +14,7 @@
     "name": "Casa Feliz",
     "description": "A Casa Feliz é um lar para crianças que precisam de amor e cuidado. Nossa equipe dedicada trabalha incansavelmente para garantir que cada criança receba o apoio necessário para um futuro brilhante.",
     "opening_hours": "Domingo a Quinta, das 8h00 às 18h00",
-    "open_on_weekends": "Sim",
+    "open_on_weekends": true,
     "position": {
       "latitude": -28.675228,
       "longitude": -49.355403
@@ -25,7 +25,7 @@
     "name": "Lar das Crianças Unidas",
     "description": "O Lar das Crianças Unidas é uma comunidade calorosa onde crianças órfãs encontram amor, amizade e oportunidades para crescerem felizes e saudáveis. Estamos comprometidos em proporcionar um ambiente familiar seguro e acolhedor.",
     "opening_hours": "Terça a Sábado, das 9h00 às 17h00",
-    "open_on_weekends": "Sim",
+    "open_on_weekends": true,
     "position": {
       "latitude": -28.675660,
       "longitude": -49.361725
@@ -36,7 +36,7 @@
     "name": "Casa da Alegria",
     "description": "A Casa da Alegria é um lar acolhedor para crianças em situação de vulnerabilidade. Nosso objetivo é proporcionar um ambiente seguro e amoroso onde cada criança possa se desenvolver plenamente.",
     "opening_hours": "Segunda a Sábado, das 8h30 às 16h30",
-    "open_on_weekends": "Sim",
+    "open_on_weekends": true,
     "position": {
       "latitude": -28.674701,
       "longitude": -49.369146

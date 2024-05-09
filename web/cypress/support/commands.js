@@ -2,6 +2,8 @@ import '../support/views/map'
 import '../support/views/create'
 import '../support/views/components'
 
+const apiUrl = Cypress.env('baseApi')
+
 Cypress.Commands.add('goTo', (url, latitude = -28.679634, longitude = -49.370124) => {
     const mockGeolocation = (win, latitude, longitude) => {
       cy.stub(win.navigator.geolocation, 'getCurrentPosition', (cb) => {
@@ -31,10 +33,10 @@ Cypress.Commands.add('postOrphanage', (orphanage) => {
       formData.append('latitude', orphanage.position.latitude)
       formData.append('longitude', orphanage.position.longitude)
       formData.append('opening_hours', orphanage.opening_hours)
-      formData.append('open_on_weekends', true)
+      formData.append('open_on_weekends', orphanage.open_on_weekends)
       formData.append('images', blob, orphanage.image)
       cy.request({
-        url: 'http://localhost:3333/orphanages',
+        url: `${apiUrl}/orphanages`,
         method: 'POST',
         headers: {
           'content-type': 'multipart/form-data',

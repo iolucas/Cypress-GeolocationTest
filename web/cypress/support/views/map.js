@@ -1,6 +1,6 @@
 Cypress.Commands.add('locateOrphanage', (name) => {
   const popup = '.leaflet-popup-content'
-  cy.goTo('http://localhost:3000/map')
+  cy.goTo('/map')
   cy.get('.leaflet-marker-icon').as('mapList')
   cy.get('@mapList').each((ele, index, list) => {
     cy.get('@mapList').eq(index).click()
