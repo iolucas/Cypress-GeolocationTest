@@ -42,20 +42,5 @@
       "longitude": -49.369146
     },
     "image": "kids-playground-2.png"
-  },
-  "create4": {
-    "name": "Abrigo Amor Fraterno",
-    "description": "O Abrigo Amor Fraterno é uma casa de acolhimento para crianças órfãs e abandonadas. Nosso compromisso é oferecer cuidado, educação e esperança para um futuro melhor.",
-    "opening_hours": "Segunda a Sexta, das 8h30 às 17h30"
-  },
-  "create5": {
-    "name": "Casa Esperança",
-    "description": "Casa Esperança é um refúgio para crianças que precisam de apoio e amor. Nossa equipe está empenhada em criar um ambiente familiar e seguro para cada criança sob nossos cuidados.",
-    "opening_hours": "Todos os dias, das 10h00 às 16h00"
-  },
-  "create6": {
-    "name": "Abrigo Felicidade",
-    "description": "Abrigo Felicidade acolhe crianças em situação de risco, proporcionando-lhes amor, educação e oportunidades para um futuro melhor. Nossa missão é inspirar esperança e transformar vidas.",
-    "opening_hours": "Segunda a Sexta, das 8h00 às 17h00"
   }
 }
