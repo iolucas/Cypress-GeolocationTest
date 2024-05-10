@@ -3,7 +3,7 @@ Cypress.Commands.add('locateOrphanage', (name) => {
   cy.goTo('/map')
   cy.get('.leaflet-marker-icon').as('mapList')
   cy.get('@mapList').each((ele, index, list) => {
-    cy.get('@mapList').eq(index).click()
+    cy.get('@mapList').eq(index).click({force: true})
     cy.wait(1000)
     cy.get(popup).as('divName')
     //now we use 'invoke' to get the property of an element we want

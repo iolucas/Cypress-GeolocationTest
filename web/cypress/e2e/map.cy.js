@@ -7,6 +7,7 @@ describe('map', () => {
     cy.deleteMany({name: orphanage.name }, { collection: 'orphanages' })
     cy.postOrphanage(orphanage)
     cy.locateOrphanage(orphanage.name)
+    cy.contains('h1', orphanage.name).should('be.visible')
     cy.mapsLink(orphanage.position)
   })
 })

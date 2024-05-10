@@ -36,11 +36,13 @@
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
     "sweetalert2": "^11.7.12",
+    "underscore": "^1.13.6",
     "yup": "^1.2.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@faker-js/faker": "^8.4.1",
+    "allure-commandline": "^2.29.0",
     "cypress": "^13.8.1",
     "cypress-mongodb": "^6.2.0"
   }

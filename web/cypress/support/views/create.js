@@ -1,5 +1,5 @@
-Cypress.Commands.add('visitCreatePage', () => {
-  cy.goTo('/orphanages/create')
+Cypress.Commands.add('visitCreatePage', (position) => {
+  cy.goTo('/orphanages/create', position.latitude, position.longitude)
   cy.get('legend').should('be.visible').should('have.text', 'Cadastro')
 })
 
